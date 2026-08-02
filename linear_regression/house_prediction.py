@@ -13,7 +13,7 @@ df = pd.read_csv('house_prices.csv')
 # print(df.head())
 
 # Features and target variable
-x = df[['SizeSqFt', 'Bedrooms', 'YearBuilt']]
+x = df[['SizeSqFt', 'Bedrooms', 'YearBuilt']]AgeAtSaleYears
 # print(x)
 y = df['SalePriceUSD']
 
@@ -85,4 +85,15 @@ print(df.corr(numeric_only=True))
 # ML Lesson:
 # Writing the code correctly doesn't mean the model will be accurate.
 # A model is only as good as the quality, volume, and features of the data provided!
+
+# ---------------------------------------------------------
+
+# How do ML engineers improve this?
+
+# In this order:
+
+# ✅ More data
+# ✅ Better features
+# ✅ Remove redundant features
+# ✅ Try different algorithms if Linear Regression isn't suitable
 # ---------------------------------------------------------
